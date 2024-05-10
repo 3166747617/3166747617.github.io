@@ -1,0 +1,134 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+    background-image: url'('../图片/sumi1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+        background-image: url('../图片/sumi1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed; /* 使背景固定，不随页面滚动 */
+        background-position: center; /* 设置背景位置为中心 */
+        background-size: cover; /* 将背景图片缩放以填满整个屏幕，可能会裁剪图片的一部分 */
+ 
+    
+}
+
+
+.box0 ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+}
+
+.box0 ul li {
+    margin-right: 10px;
+    background-color: aqua;
+}
+
+.box0 ul li .box01:hover {
+    background-color: aquamarine;
+    transition: background-color 0.5s;
+}
+
+.box0 ul li .box001:hover {
+    background-color: aquamarine;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.download-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+.download-link:hover {
+    background-color: #0056b3;
+    transition: background-color 0.5s;
+}
+ /* 添加毛玻璃效果的导航栏样式 */
+ .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5); /* 设置背景色并增加透明度 */
+    backdrop-filter: blur(10px); /* 添加毛玻璃效果 */
+    padding: 10px 0;
+    z-index: 1000; /* 确保导航栏在最顶层 */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #f0f0f0;
+}
+/* 图片容器样式 */
+.img-container {
+    display: inline-block; /* 使容器可以包含图片 */
+    padding: 5px; /* 添加额外的透明空间 */
+}
+
+/* 图片放大效果 */
+.img-container img.hover-zoom:hover {
+    transform: scale(1.05); /* 将图片放大到原始大小的1.05倍 */
+    transition: transform 0.3s; /* 添加过渡效果 */
+}

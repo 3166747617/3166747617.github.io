@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+video, audio {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* 添加顶部导航栏样式 */
+.navbar {
+    background-color: #333; /* 设置背景颜色 */
+    overflow: hidden;
+    border-radius: 40px; /* 添加圆角 */
+}
+
+/* 导航链接样式 */
+.navbar a {
+    float: left; /* 左浮动使链接排列在一行 */
+    display: block; /* 将链接转换为块元素 */
+    color: white; /* 设置文字颜色 */
+    text-align: center; /* 文字居中 */
+    padding: 14px 20px; /* 设置内边距 */
+    text-decoration: none; /* 去除下划线 */
+}
+
+/* 添加下拉菜单样式 */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 100px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dao {
+    height: auto;
+    width: 10px;
+    background-color: aqua;
+}
+
